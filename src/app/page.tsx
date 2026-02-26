@@ -125,11 +125,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#skills">Skills</a>
-          <a href="#resume">Resume</a>
           <a href="#certifications">Certifications</a>
-          <a href="#education">Education</a>
-          <a href="#training">Training</a>
-          <a href="#languages">Languages</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
