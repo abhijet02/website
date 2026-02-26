@@ -84,6 +84,7 @@ export default function Home() {
     { title: 'AWS Fundamentals: Going Cloud-Native' },
     { title: 'CompTIA Server+' },
     { title: 'Red Hat Certified System Administrator' },
+    { title: 'Red Hat Certified Engineer' },
     { title: 'Red Hat Fundamentals of Ansible' },
     { title: 'Microsoft Certified: Azure Administrator Associate' },
     { title: 'Microsoft Certified: Windows Server Hybrid Administrator Associate' },
@@ -93,6 +94,8 @@ export default function Home() {
   ];
 
   const training = [
+    'Cloud Systems and Infrastructure - University of Colorado System',
+    'System Administration and IT Infrastructure Services - Google',
     'Azure Infrastructure Fundamentals - University of Colorado System',
     'Enterprise System Management and Security - University of Colorado System',
     'Red Hat Certified System Administrator (RHCSA)',
@@ -138,10 +141,10 @@ export default function Home() {
             Abhijeet <span>Adhikary</span>
           </h1>
           <p className="hero-subtitle">
-            DevOps | System Admin | Cloud | Infrastructure | Security
+            System Admin | Devops | Cloud | Infrastructure | Security
           </p>
           <p className="hero-body">
-            Lead System Engineer with 10+ years of experience running hybrid cloud,
+            Lead System Engineer with 12+ years of experience running hybrid cloud,
             VMware estates (500+ VMs), Kubernetes clusters, and enterprise
             infrastructure with 99.9% uptime.
           </p>
@@ -190,7 +193,7 @@ export default function Home() {
           </div>
           <div className="hero-stats">
             <div>
-              <h3>10+ Years</h3>
+              <h3>12+ Years</h3>
               <p>Enterprise Ops</p>
             </div>
             <div>
@@ -217,16 +220,23 @@ export default function Home() {
             <img src="/profile.jpg" alt="Abhijeet portrait" />
           </div>
           <div className="hero-card-body">
-            <h3>Focus Areas</h3>
-            <p>
-              Hybrid Cloud - Kubernetes - Security - Reliability - Virtualization -
-              On-Prem Data Center
-            </p>
             <div className="hero-card-tags">
               <span>DevOps</span>
               <span>Infra</span>
               <span>Automation</span>
               <span>Compliance</span>
+              <span>Kubernetes</span>
+              <span>Hybrid Cloud</span>
+              <span>On-Prem Data Center</span>
+              <span>Virtualization</span>
+              <span>Security</span>
+              <span>VMware</span>
+              <span>GitLab</span>
+              <span>CI/CD</span>
+              <span>Terraform</span>
+              <span>Ansible</span>
+              <span>Docker</span>
+              <span>SysOps</span>
             </div>
           </div>
         </div>
@@ -244,10 +254,6 @@ export default function Home() {
             management.
           </p>
           <div className="badge-row">
-            <span>Hybrid Cloud</span>
-            <span>VMware</span>
-            <span>Kubernetes</span>
-            <span>Security</span>
           </div>
         </div>
       </section>
@@ -307,14 +313,12 @@ export default function Home() {
 
       <section id="certifications" className="section">
         <div className="section-head">
-          <p className="section-label">Certifications</p>
-          <h2 className="section-title">Credentials & training</h2>
+          <p className="section-label section-label--large">Certifications</p>
         </div>
         <div className="cert-grid">
           {certifications.map((certification) => (
             <div key={certification.title} className="cert-card">
               <h3>{certification.title}</h3>
-              <span className="cert-pill">Credential</span>
             </div>
           ))}
         </div>

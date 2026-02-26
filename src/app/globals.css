@@ -343,6 +343,10 @@
           margin-bottom: 12px;
         }
 
+        .section-label--large {
+          font-size: 14px;
+        }
+
         .section-title {
           font-family: var(--font-display), serif;
           font-size: clamp(26px, 3vw, 38px);
