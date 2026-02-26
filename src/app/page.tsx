@@ -238,19 +238,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="section split">
-        <div>
+      <section id="about" className="section">
+        <div className="section-head">
           <p className="section-label">About</p>
-          <h2 className="section-title">Driving resilient infrastructure at scale.</h2>
-        </div>
-        <div className="section-card">
-          <p>
-            Passionate tech enthusiast with hands-on experience in System
-            administration, Devops, cloud services, and IT infrastructure
-            management.
-          </p>
-          <div className="badge-row">
-          </div>
+          <h2 className="section-title">
+            Passionate tech enthusiast with hands-on experience in System administration, Devops,
+            cloud services, and IT infrastructure management.
+          </h2>
         </div>
       </section>
 
@@ -285,7 +279,7 @@ export default function Home() {
 
       <section id="resume" className="section">
         <div className="section-head">
-          <span className="skill-pill">Experience</span>
+          <span className="skill-pill experience-pill">Experience</span>
         </div>
         <div className="timeline">
           {experience.map((item) => (
