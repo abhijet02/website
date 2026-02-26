@@ -285,8 +285,7 @@ export default function Home() {
 
       <section id="resume" className="section">
         <div className="section-head">
-          <p className="section-label">Resume</p>
-          <h2 className="section-title">Experience</h2>
+          <span className="skill-pill">Experience</span>
         </div>
         <div className="timeline">
           {experience.map((item) => (
@@ -323,7 +322,6 @@ export default function Home() {
       <section id="education" className="section">
         <div className="section-head">
           <p className="section-label">Education</p>
-          <h2 className="section-title">Academic background</h2>
         </div>
         <div className="skill-grid">
           {education.map((item) => (
@@ -337,7 +335,6 @@ export default function Home() {
       <section id="training" className="section">
         <div className="section-head">
           <p className="section-label">Training</p>
-          <h2 className="section-title">Professional training</h2>
         </div>
         <div className="skill-grid">
           {training.map((item) => (
@@ -351,7 +348,6 @@ export default function Home() {
       <section id="languages" className="section">
         <div className="section-head">
           <p className="section-label">Languages</p>
-          <h2 className="section-title">Communication</h2>
         </div>
         <div className="skill-grid">
           {languages.map((item) => (
