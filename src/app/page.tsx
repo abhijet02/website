@@ -241,10 +241,10 @@ export default function Home() {
       <section id="about" className="section">
         <div className="section-head">
           <p className="section-label">About</p>
-          <h2 className="section-title">
+          <p className="about-copy">
             Passionate tech enthusiast with hands-on experience in System administration, Devops,
             cloud services, and IT infrastructure management.
-          </h2>
+          </p>
         </div>
       </section>
 
