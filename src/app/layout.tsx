@@ -12,8 +12,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: 'Abhijeet Portfolio',
-  description: 'Lead System Engineer | DevOps | Cloud | Infrastructure | Security',
+  title: 'Abhijeet Adhikary | Lead System Engineer | Dhaka, Bangladesh',
+  description:
+    'Lead System Engineer | DevOps | Cloud | Infrastructure | Security | Dhaka, Bangladesh',
 };
 
 export default function RootLayout({ children }) {

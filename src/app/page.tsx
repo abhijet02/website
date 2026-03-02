@@ -1,6 +1,6 @@
 'use client';
 
-import { FaGithub, FaLinkedin, FaLinux, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaLinux, FaYoutube } from 'react-icons/fa';
 import { SiGitlab, SiKubernetes, SiVmware } from 'react-icons/si';
 
 export default function Home() {
@@ -174,17 +174,10 @@ export default function Home() {
             </a>
             <a
               className="icon-link"
-              href="https://github.com/abhijet02"
-              aria-label="GitHub"
+              href="mailto:info@abhijeetadhikary.com"
+              aria-label="Email"
             >
-              <FaGithub />
-            </a>
-            <a
-              className="icon-link"
-              href="https://www.linkedin.com/in/abhijeet-adhikary-b6326b1a1/"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
+              <FaEnvelope />
             </a>
           </div>
           <div className="hero-stats">
@@ -369,7 +362,7 @@ export default function Home() {
               const form = event.currentTarget;
               const subject = new FormData(form).get('subject');
               const message = new FormData(form).get('message');
-              const email = 'abhijet02@gmail.com';
+              const email = 'info@abhijeetadhikary.com';
               const mailto = `mailto:${email}?subject=${encodeURIComponent(
                 String(subject || '')
               )}&body=${encodeURIComponent(String(message || ''))}`;
@@ -390,9 +383,8 @@ export default function Home() {
           </form>
           <div className="contact-links">
             <a href="tel:+8801717934541">+880 1717 934541</a>
-            <a href="https://github.com/abhijet02">GitHub</a>
-            <a href="https://www.linkedin.com/in/abhijeet-adhikary-b6326b1a1/">
-              LinkedIn
+            <a href="mailto:info@abhijeetadhikary.com">
+              info@abhijeetadhikary.com (Email for any queries)
             </a>
           </div>
         </div>
