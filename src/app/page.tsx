@@ -1,6 +1,6 @@
 'use client';
 
-import { FaEnvelope, FaLinux, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinux, FaYoutube } from 'react-icons/fa';
 import { SiGitlab, SiKubernetes, SiVmware } from 'react-icons/si';
 
 export default function Home() {
@@ -171,6 +171,13 @@ export default function Home() {
               aria-label="YouTube"
             >
               <FaYoutube />
+            </a>
+            <a
+              className="icon-link"
+              href="https://github.com/abhijet02"
+              aria-label="GitHub"
+            >
+              <FaGithub />
             </a>
             <a
               className="icon-link"

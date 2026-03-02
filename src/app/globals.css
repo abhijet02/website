@@ -33,6 +33,11 @@
           display: block;
         }
 
+        html {
+          scroll-behavior: smooth;
+          scroll-padding-top: 80px;
+        }
+
         .page {
           position: relative;
           overflow: hidden;
@@ -329,6 +334,7 @@
           position: relative;
           z-index: 2;
           margin-bottom: 64px;
+          scroll-margin-top: 80px;
         }
 
         .section-head {
@@ -558,8 +564,11 @@
           gap: 14px;
           flex-wrap: wrap;
           color: var(--accent-2);
-          text-decoration: underline;
-          text-underline-offset: 4px;
+          text-decoration: none;
+        }
+
+        .contact-links a {
+          text-decoration: none;
         }
 
         .footer {
