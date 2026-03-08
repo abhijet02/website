@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Playfair_Display, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
@@ -11,10 +12,14 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-body',
 });
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://abhijeetadhikary.com'),
   title: 'Abhijeet Adhikary | Lead System Engineer | Dhaka, Bangladesh',
   description:
     'Lead System Engineer | DevOps | Cloud | Infrastructure | Security | Dhaka, Bangladesh',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 const personSchema = {
@@ -36,7 +41,7 @@ const personSchema = {
   ],
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${spaceGrotesk.variable}`}>
       <body>
