@@ -44,6 +44,9 @@ const personSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${spaceGrotesk.variable}`}>
+      <head>
+        <link rel="canonical" href="https://abhijeetadhikary.com/" />
+      </head>
       <body>
         <script
           type="application/ld+json"
