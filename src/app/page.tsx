@@ -76,6 +76,18 @@ export default function Home() {
         'Supported 100+ users and maintained on-prem data center services.',
       ],
     },
+    {
+      role: 'Content Executive',
+      company: 'Gakk Media (BD) Ltd., Dhaka',
+      period: 'Mar 2014 - Sep 2014',
+      highlights: [],
+    },
+    {
+      role: 'Technical Support',
+      company: 'QUBEE, Dhaka',
+      period: 'Dec 2013 - Jan 2014',
+      highlights: [],
+    },
   ];
 
   const certifications = [
