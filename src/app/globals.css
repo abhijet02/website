@@ -480,6 +480,7 @@
 
         .timeline {
           display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 20px;
         }
 
@@ -653,7 +654,8 @@
 
           .card-grid,
           .skill-grid,
-          .cert-grid {
+          .cert-grid,
+          .timeline {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
@@ -684,7 +686,8 @@
 
           .card-grid,
           .skill-grid,
-          .cert-grid {
+          .cert-grid,
+          .timeline {
             grid-template-columns: 1fr;
           }
         }

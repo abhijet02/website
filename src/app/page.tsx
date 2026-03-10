@@ -48,7 +48,7 @@ export default function Home() {
       ],
     },
     {
-      role: 'System Engineer',
+      role: 'Senior System Engineer',
       company: 'BRACIT Services Limited, Dhaka',
       period: 'Jan 2023 - Jun 2024',
       highlights: [
@@ -66,6 +66,14 @@ export default function Home() {
         'Administered Linux and Windows Server environments.',
         'Delivered automation with Shell, Expect, Sed, and Awk.',
         'Implemented SSL/TLS at scale with hardening and migrations.',
+      ],
+    },
+    {
+      role: 'Support Engineer',
+      company: 'BRACIT Services Limited, Dhaka',
+      period: 'Jan 2017 - March 2019',
+      highlights: [
+        'Supported 300+ users and maintained on-prem IT & Exchange email services.',
       ],
     },
     {
@@ -295,18 +303,20 @@ export default function Home() {
         </div>
         <div className="timeline">
           {experience.map((item) => (
-            <div key={item.role} className="timeline-item">
+            <div key={`${item.role}-${item.period}`} className="timeline-item">
               <div>
                 <h3>{item.role}</h3>
                 <p className="muted">
                   {item.company} - {item.period}
                 </p>
               </div>
-              <ul className="timeline-highlights">
-                {item.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
-              </ul>
+              {item.highlights.length > 0 && (
+                <ul className="timeline-highlights">
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
